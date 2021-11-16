@@ -1,0 +1,142 @@
+
+*{
+    font-family: 'Noto Sans Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+}
+
+.topContainer{
+    width: 100vw;
+    display:table-row;
+    align-items: center;
+    justify-content: center;
+}
+
+#backBtn{
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #A9927D;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#backBtn:hover{
+    background-color: #49111C;
+}
+
+.heading{
+    font-family: 'Overlock', cursive;
+    text-align: center;
+    color: #F2F4F3;
+    font-size: 5rem;
+}
+
+.title{
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    color: #A9927D;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.description{
+    color: rgb(177, 167, 167);
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.columnheading{
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 1.5rem;
+}
+
+.bookNowBtn{
+    color: #A9927D;
+    border-color: #A9927D;
+    border-radius: 1.5rem;
+}
+
+.bookNowBtn:hover{
+    color: #49111C;
+    border-color: #49111C;
+    background-color: white;
+}
+ 
+.image{
+    width: auto;
+    height: 80%;
+  }
+  .image img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+  }
+
+  .reviewDescription{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: rgb(177, 167, 167);
+      font-family: 'Noto Sans Display', sans-serif;
+      text-align: center;
+      font-size: 1.2rem;
+  }
+
+  .reviewHeading{
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: auto;
+    width: auto;
+    background-size: 100%, 100%;
+    border-radius: 1rem;
+    border: 1px solid #A9927D;
+    background-image: none;
+  }
+  
+  .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 3rem;
+    color: #A9927D;
+    padding: 1rem;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 3rem;
+    color: #A9927D;
+    padding: 1rem;
+  }

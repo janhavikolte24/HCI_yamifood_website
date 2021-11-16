@@ -1,0 +1,79 @@
+
+*{
+    font-family: 'Noto Sans Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1a/20/3d/4e/soi-25-flat-lay-20.jpg");
+    background-repeat: no-repeat;
+}
+
+.topContainer{
+    width: 100vw;
+    display:table-row;
+    align-items: center;
+    justify-content: center;
+}
+
+#backBtn{
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #A9927D;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#backBtn:hover{
+    background-color: #49111C;
+}
+
+.heading{
+    font-family: 'Overlock', cursive;
+    text-align: center;
+    color: #F2F4F3;
+    font-size: 5rem;
+}
+
+.title{
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    color: #A9927D;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.description{
+    color: rgb(177, 167, 167);
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #A9927D;
+}
+
+.nav-link:hover{
+    color: #49111C;
+}
