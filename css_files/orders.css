@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+body {
+  background-color: #f2f4f3;
+  margin: auto;
+  font-family: "Helvetica Neue",Helvetica;
+}
+
+.nav_bar {
+  background: #5e503f;
+  padding: 10px;
+}
+
+.nav_bar .heading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #0a0908;
+  padding-bottom: 5px;
+  font-size: 2.5em;
+}
+
+.nav_bar .back {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_bar .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav_bar .mob_cta {
+  cursor: pointer;
+}
+
+a {
+  padding: 10px;
+  color: #444444;
+}
+
+ul {
+  list-style-type:none;
+  display:flex;
+  place-content: space-between;
+}
+
+section {
+  padding: 1em;
+  margin: 0;
+}
+
+.main_order {
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: large;
+  background-color: #cfa671;
+  color: #47111c;
+}
+
+.order_history {
+  padding: 0;
+  color: #47111c;
+}
+h3{
+  border: 1px solid black;
+  padding: 8px;
+  margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: large;
+}
+
+.order_history .history_heading {
+  background-color: #796b5a;
+  color:#49111C;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-size: 27px;
+  text-align: center;
+  padding: 10px;
+}
+
+.order_history .order1{
+  padding: 10px;
+  margin: 35px;
+  background-color: #cfa671;
+}
+.order_history .order2{
+  padding: 10px;
+  margin: 35px;
+  background-color: #cfa671;
+}
+.alert {
+  margin: 50px;
+  padding:0px;
+}
+
+
+/*# sourceMappingURL=main.css.map */

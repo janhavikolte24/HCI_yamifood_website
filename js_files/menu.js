@@ -60,7 +60,9 @@ function dragBill(){
 }
 
 
-
+document.getElementById('backBtn').addEventListener('click',function(){
+    location.href = "../html_files/home.html";
+});
 
 // allAddBtns = document.getElementsByClassName('addBtn');
 // console.log(allAddBtns);
