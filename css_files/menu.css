@@ -3,8 +3,12 @@
     font-family: 'Noto Sans Display', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 
 
 .imageContainer{
@@ -77,3 +81,448 @@
 .nav-link:hover{
     color: #49111C;
 }
+
+.card{
+    width: 20vw;
+    height: 25vh;
+    margin: 1rem;
+    position: relative;
+}
+.card-body{
+    opacity: 0;
+    bottom: 1rem;
+    margin: 0.7rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    overflow: scroll;
+}
+.card-body::-webkit-scrollbar{
+    display: none;
+}
+
+.card-img-top{
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-text{
+    font-size: 0.8rem;
+    overflow: hidden;
+    color: black;
+}
+
+.dishName{
+    font-family: 'Overlock', cursive;
+    font-size: 1.2rem;
+    overflow: hidden;
+    color: #49111C;
+}
+
+.card-container{
+    height: auto;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card-body{
+    opacity: 1;
+    transition: opacity 750ms ease-in;
+}
+
+.card:hover .card-img-top{
+    opacity: 0.4;
+}
+
+.card:hover{
+    background-color: #cfa671;
+}
+
+.addBtn{
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.3rem;
+
+    position: absolute;
+    border-radius: 2rem;
+    color: white;
+    background-color: #49111C;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.infoBtn{
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    position: absolute;
+    border-radius: 2rem;
+    color: white;
+    background-color: #49111C;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#billdiv{
+    height: auto;
+    max-height: 75%;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0%,100%);
+    overflow-y:scroll;
+    overflow-x:hidden ;
+    transition-duration: 750ms;
+}
+
+#billdiv::-webkit-scrollbar{
+    display: none;
+}
+
+#dragBtn{
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    color: white;
+    background-color: #cfa671;
+    font-size: 2rem;
+    height: auto;
+    position:fixed;
+    font-weight: bold;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+}
+
+#dragDown{
+    width: fit-content;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    color: white;
+    background-color: #cfa671;
+    font-size: 2rem;
+    height: auto;
+    position:fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 0rem 0rem 0.5rem 1.2rem;
+}
+
+#dragBtn:hover{
+    color: #49111C;
+}
+#dragDown:hover{
+    color: #49111C;
+}
+
+.billHeader{
+    font-family: 'Overlock', cursive;
+    font-size: 2.5rem;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-color: #49111C;
+    background-color:#cfa671;
+    margin-top: 1rem;
+}
+.dishTable{
+    height: 50vh;
+    width: 70%;
+    align-self: center;
+}
+
+.dishItemsDiv{
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.dishItemsDiv .billItems{
+    height: auto;
+    /* display: table-row; */
+    position: relative;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+
+}
+.billItems .itemName{
+    font-size: 1.5rem;
+    color: black;
+    /* float: left; */
+    align-self: flex-start;
+}
+.billItems .itemPrice{
+    position: absolute;
+    font-size: 1.5rem;
+    color: green;
+    align-self: center;
+}
+.billItems .toggleDishBtn{
+    font-size: 1.3rem;
+    align-self: flex-end;
+    position: absolute;
+    border-radius: 2rem;
+    color: white;
+    background-color: #49111C;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.taxDiv{
+    height: auto;
+    display: table-row;
+   margin: 1.2rem;
+}
+.taxDiv .taxName{
+    font-size: 1.5rem;
+    color: black;
+    float: left;
+}
+
+.taxDiv .taxPrice{
+    font-size: 1.5rem;
+    color: green;
+    float: right;
+}
+
+.grandTotalDiv{
+    height: auto;
+    display: table-row;
+    margin: 1.2rem;
+}
+
+.grandTotalDiv .totalTitle{
+    font-size: 1.5rem;
+    color: black;
+    float: left;
+    font-weight: bold;
+}
+
+.grandTotalDiv .totalPrice{
+    font-size: 1.5rem;
+    color: green;
+    float: right;
+    font-weight: bold;
+}
+
+.dishTableIndex{
+    height: fit-content;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: auto;
+    justify-items: center;
+}
+
+.dishHeading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.priceHeading{
+    position: absolute;
+    align-self: center;
+    font-size: 1.5rem;
+    color: black;
+}
+.checked{
+    position: absolute;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.payNowBtn{
+    height: auto;
+    width: 50%;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfa671;
+    color: white;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+
+.payNowBtn:hover{
+    color: #49111C;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+
+#ingredientPopUp{
+    display: none;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 1.2rem;
+    box-shadow: 0 3px 7px rgb(180, 177, 177);
+    align-self: center;
+    justify-self: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA_pSSkVqBmiAf0EgrjJU0jQoolxxM44eu4A&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+    overflow: scroll;
+    z-index: 9;
+    animation: scalein 750ms;
+    position: fixed;
+    bottom: 1.5rem;
+}
+
+
+@keyframes scalein{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.blur{
+    filter: blur(4px);
+}
+
+
+#ingredientPopUp::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.namePrice{
+    display: table-row;
+    margin: 1.1rem;
+}
+.popUpDishName{
+    font-family: 'Overlock', cursive;
+    font-size: 1.5rem;
+    color: #49111C;
+    float: left;
+}
+.popUpPrice{
+    font-family: 'Overlock', cursive;
+    font-size: 1.5rem;
+    color: green;
+    float: right;
+    font-weight: bold;
+}
+.popUpDishDescription{
+    font-size: 1.2rem;
+    color: black;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.ingredientHeading{
+    align-self: center;
+    font-size: 1.5rem;
+    color: black;
+    margin: 1rem;
+    font-weight: bold;
+}
+hr.solid {
+    border-top: 3px solid rgb(54, 53, 53);
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.ingredientItems{
+    margin: 1rem;
+    height: 50%;
+}
+
+.item{
+    display: table-row;
+    padding: 0.5rem;
+}
+
+.item .ingredientName{
+    float: left;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.item .checkbox{
+    float: right;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #49111C;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.crossBtn{
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.crossBtn:hover{
+    background-color: gray;
+} 
